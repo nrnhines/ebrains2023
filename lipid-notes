@@ -1,0 +1,27 @@
+Slide 1
+    Physical -> Model involves abstraction. Capture relevance.
+
+    Model -> representation  "Completely" faithful to conceptual model
+       Ideal but hard to attain because of computer "accidents". Discretization.
+       Don't want the representation to obscure the conceptuial model
+
+Slide 2
+    If apply a current across a lipid bilayer, what is the voltage
+      across the bilayer?
+
+    Model: bilayer is a capacitor.
+        Catastrophically wrong model if the current is too large.
+        Subtly wrong? How close is a lipid-bilayer to an "ideal" capacitor?
+
+    Representation:
+       That is the capacitor. Not shown is how to apply the current stimulus
+       or how to see the stimulus and result of a run.
+
+    Question. What is the voltage trajectory going to look like?
+       Reward: Satisfaction if you guess (know) correctly.
+               Surprise if you don't.
+    
+Slide 3
+    If you are surprised: Do you need to change your intuition or do you
+      need to find the program bug.
+      A good strategy: Ask someone for an explanation.
