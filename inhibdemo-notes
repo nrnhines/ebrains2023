@@ -1,0 +1,79 @@
+Why do inhibitory coupled networks tend to synchronize?
+(Even if their intrinsic cell firing rates differ.)
+
+Slide 1
+    neurondemo
+    Select "Synchronizing net (artificial cells)".
+    Set "All to all connection weight" and "Delay" to 0.
+    Press the run button.
+    See: each cell fires with increasing interval.
+    Fastest: 10ms interval, slowest 15ms interval.
+
+Slide 2
+    With "All to all connecton weight" inhibitory (-0.3)
+    all cells reduce their firing rate. The slower cells are
+    inhibited from firing at all.
+
+Slide 3.
+    With spike transmission delay of 4ms, the faster cells
+    are synchronized, but slower cells have dropped spikes and
+    slowest cell does not fire at all.
+
+Slide 4.
+    With a longer delay of 8ms, all cells are synchronized.
+
+Slide 5.
+    IntervalFire artificial cell equation and logic.
+
+Slide 6.
+    Analytic solution for minf that makes the cell fire with an
+    intrinsic rate of 1 spike per invl.
+    Analytic solution for value of cell state at t if its value
+    at time t0 was m.
+    Initialize the cell to fire invl (ms) from now.
+
+Slide 7.
+    NEURON ARTIFICIAL_CELL computes only when an event arrives.
+    flag == 0 events mean an event with weight 0 arrived from some other
+    cell. Depending on the cell state, it either fires, or moves its firing
+    time to a new value from now. If the cell does not fire on this event,
+    inhibitory (negative weight) events delay the firing time.
+    Otherwise, the event means the cell should fire now and prepare for
+    the next firing time.
+
+Slide 8.
+    Create the network. (parameter setting for Cell and NetCon not shown)
+
+Slide 9.
+    Intrinsic Cell state trajectories for fastest (red), medium (black), and
+    slowest (blue) cell.
+
+Slide 10.
+    With 0ms delay, a firing cell inhibits all the other cells immediately.
+    Examining the red trajectory carefully, you might be able to see that
+    a given decrease in m when m is close to threshold delays the firing
+    more than if m is far from theshold (the trajectories have
+    decreasing positive slope as they approach threshold).
+
+Slide 11.
+    With 4ms delay, after the fast red cell fires, it has 4ms to rise before
+    a flurry of slower cell events arrive and drives it down to a 
+    significantly hyperpolarized state. Similary the black cell fires before
+    any of the flurry arrives (especially from the faster red cell) but
+    the flurry drives the black cell even lower than the red cell.  But
+    the last event for the lower black starting point does not delay the
+    next firing as much as the last event for the red staring point.
+
+Slide 12.
+    Full synchronization at 8 ms delay. The red cell after firing almost rises
+    enough to fire again but the flurry of events arrives first. The slower
+    cells are driven to much lower hyperpolarizing states, but each
+    hyperpolarizing event delays the cell firing by less and less. The
+    slowest cell is able to fire before the event from the fastest cell
+    arrives.
+
+Conclusion: Inhibitory synchronization requires
+    Inhibition
+    Delay
+    Convex state trajectories
+
