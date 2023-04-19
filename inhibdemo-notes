@@ -19,7 +19,7 @@ Slide 3.
     are synchronized, but slower cells have dropped spikes and
     slowest cell does not fire at all.
 
-Slide 4.
+slide 4.
     With a longer delay of 8ms, all cells are synchronized.
 
 Slide 5.
@@ -34,7 +34,7 @@ Slide 6.
 
 Slide 7.
     NEURON ARTIFICIAL_CELL computes only when an event arrives.
-    flag == 0 events mean an event with weight 0 arrived from some other
+    flag == 0 events mean an event with weight w arrived from some other
     cell. Depending on the cell state, it either fires, or moves its firing
     time to a new value from now. If the cell does not fire on this event,
     inhibitory (negative weight) events delay the firing time.
@@ -62,7 +62,10 @@ Slide 11.
     any of the flurry arrives (especially from the faster red cell) but
     the flurry drives the black cell even lower than the red cell.  But
     the last event for the lower black starting point does not delay the
-    next firing as much as the last event for the red staring point.
+    next firing as much as the last event for the red starting point.
+    The slowest blue cell never fires because the flurry arrives to
+    always drive it too far from threshold to recover before the next flurry
+    arrives.
 
 Slide 12.
     Full synchronization at 8 ms delay. The red cell after firing almost rises
