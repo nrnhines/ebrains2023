@@ -1,0 +1,17 @@
+intronet.id
+#network
+spikecoupled.id
+spikecoupled2.id
+set2.id
+set3.id
+set4.id
+set51.id
+set52.id
+set8.id
+
+#run
+run*.id
+
+traubperf1.id
+traubperf2.id
+
