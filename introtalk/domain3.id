@@ -2,7 +2,7 @@
 %%Creator: idraw
 %%DocumentFonts: Helvetica Helvetica-Bold
 %%Pages: 1
-%%BoundingBox: 28 20 704 524
+%%BoundingBox: 28 19 704 524
 %%EndComments
 
 %%BeginIdrawPrologue
@@ -56410,11 +56410,12 @@ Begin %I Text
 %I f -*-helvetica-bold-r-normal-*-14-*-*-*-*-*-*-*
 Helvetica-Bold 14 SetF
 %I t
-[ 1.8 7.86804e-08 -7.86804e-08 1.8 447.753 176.257 ] concat
+[ 1.8 7.86804e-08 -7.86804e-08 1.8 439.96 199.637 ] concat
 %I
 [
 (Single Channels)
 (Extracellular fields)
+(Reaction-Diffusion \(3-D\))
 (Linear circuits)
 (Synapses)
 (Gap Junctions)
