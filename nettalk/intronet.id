@@ -517,42 +517,6 @@ Times-Bold 14 SetF
 ] Text
 End
 
-Begin %I Pict
-%I b u
-%I cfg u
-%I cbg u
-%I f u
-%I p u
-%I t u
-
-Begin %I Text
-%I cfg Black
-0 0 0 SetCFg
-%I f -*-times-bold-r-normal-*-14-*-*-*-*-*-*-*
-Times-Bold 14 SetF
-%I t
-[ 5.76 0 0 5.76 253.893 405.103 ] concat
-%I
-[
-(EBRAINS School on Brain Simulation)
-] Text
-End
-
-Begin %I Text
-%I cfg Black
-0 0 0 SetCFg
-%I f -*-times-bold-r-normal-*-14-*-*-*-*-*-*-*
-Times-Bold 14 SetF
-%I t
-[ 5.76 0 0 5.76 674.373 316.827 ] concat
-%I
-[
-(Palermo 2023)
-] Text
-End
-
-End %I eop
-
 Begin %I Text
 %I cfg Black
 0 0 0 SetCFg
@@ -604,6 +568,42 @@ Times-Bold 14 SetF
 (Michael Hines \(Yale, USA\))
 ] Text
 End
+
+Begin %I Pict
+%I b u
+%I cfg u
+%I cbg u
+%I f u
+%I p u
+%I t u
+
+Begin %I Text
+%I cfg Black
+0 0 0 SetCFg
+%I f -*-times-bold-r-normal-*-14-*-*-*-*-*-*-*
+Times-Bold 14 SetF
+%I t
+[ 5.76 0 0 5.76 253.893 405.103 ] concat
+%I
+[
+(EBRAINS School on Brain Simulation)
+] Text
+End
+
+Begin %I Text
+%I cfg Black
+0 0 0 SetCFg
+%I f -*-times-bold-r-normal-*-14-*-*-*-*-*-*-*
+Times-Bold 14 SetF
+%I t
+[ 5.76 0 0 5.76 873.093 316.827 ] concat
+%I
+[
+(2023)
+] Text
+End
+
+End %I eop
 
 End %I eop
 
